@@ -1,0 +1,19 @@
+<h1>Formulario Producto</h1>
+
+<form>
+    <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="product.name">
+    </div>
+    <div class="mb-3">
+        <label for="category" class="form-label">Categoria</label>
+        <input type="text" class="form-control" id="category" name="category" [(ngModel)]="product.category">
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Precio</label>
+        <input type="number" class="form-control" id="price" name="price" [(ngModel)]="product.price">
+    </div>
+    <button type="submit" class="btn btn-primary" 
+        (click)="addProduct()">Crear
+    </button>
+</form>
